@@ -1,0 +1,335 @@
+{
+    "info": {
+        "_postman_id": "a9000e73-c5ec-4c68-807c-e5d063b6259c",
+        "name": "Eprens",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [{
+        "name": "Login Eprens",
+        "id": "36d39f48-b606-4f8a-ae06-d1376ecb5464",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+        },
+        "response": []
+    }, {
+        "name": "presensi",
+        "id": "3f1d1efe-9230-4f6e-be91-3023b6365432",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "urlencoded",
+                "urlencoded": [{
+                    "key": "l_code",
+                    "value": "10.1.1.25",
+                    "type": "text"
+                }, {
+                    "key": "r_no",
+                    "value": "25",
+                    "type": "text"
+                }, {
+                    "key": "timestamp",
+                    "value": "1638850461",
+                    "type": "text"
+                }, {
+                    "key": "nip",
+                    "value": "201804199708162717",
+                    "type": "text"
+                }, {
+                    "key": "handkey",
+                    "value": "6429",
+                    "type": "text"
+                }, {
+                    "key": "time_absen",
+                    "value": "07-12-2021",
+                    "type": "text"
+                }, {
+                    "key": "type_in",
+                    "value": "1",
+                    "type": "text"
+                }, {
+                    "key": "device_id",
+                    "value": "355325020849636",
+                    "type": "text"
+                }, {
+                    "key": "provider",
+                    "value": "0",
+                    "type": "text"
+                }, {
+                    "key": "gps_information",
+                    "value": "0",
+                    "type": "text"
+                }, {
+                    "key": "capture_qr_code",
+                    "value": "",
+                    "type": "text"
+                }, {
+                    "key": "photo_selfie",
+                    "value": "",
+                    "type": "text"
+                }, {
+                    "key": "versi_aplikasi_eprens",
+                    "value": "ios",
+                    "type": "text"
+                }, {
+                    "key": "qrcode",
+                    "value": "{\"L_CODE\":\"10.1.1.25\",\"R_NO\":\"25\",\"I_CODE\":\"\",\"TIMESTAMP\":1638780611,\"INSTALASI\":\"instidev\",\"KEY\":\"C\"}",
+                    "type": "text"
+                }, {
+                    "key": "jenis_absensi",
+                    "value": "MASUK",
+                    "type": "text"
+                }]
+            },
+            "url": "http://android.simetris.net/index.php/services/absen/presensi"
+        },
+        "response": []
+    }, {
+        "name": "Send bukti image",
+        "id": "5c16817f-927a-450b-ab1c-754460083daa",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "urlencoded",
+                "urlencoded": [{
+                    "key": "id_trans",
+                    "value": "",
+                    "type": "text"
+                }, {
+                    "key": "handkey",
+                    "value": "6429",
+                    "type": "text"
+                }, {
+                    "key": "time_absen",
+                    "value": "07-12-2021",
+                    "type": "text"
+                }, {
+                    "key": "device_id",
+                    "value": "355325020849636",
+                    "type": "text"
+                }, {
+                    "key": "provider",
+                    "value": "0",
+                    "type": "text"
+                }, {
+                    "key": "gps_information",
+                    "value": "0",
+                    "type": "text"
+                }, {
+                    "key": "capture_qr_code",
+                    "value": "",
+                    "type": "text"
+                }, {
+                    "key": "photo_selfie",
+                    "value": "",
+                    "type": "text"
+                }, {
+                    "key": "versi_aplikasi_eprens",
+                    "value": "ios",
+                    "type": "text"
+                }, {
+                    "key": "qrcode",
+                    "value": "{\"L_CODE\":\"10.1.1.25\",\"R_NO\":\"25\",\"I_CODE\":\"\",\"TIMESTAMP\":1638780611,\"INSTALASI\":\"instidev\",\"KEY\":\"C\"}",
+                    "type": "text"
+                }, {
+                    "key": "jenis_absensi",
+                    "value": "MASUK",
+                    "type": "text"
+                }]
+            },
+            "url": "http://android.simetris.net/index.php/services/absen/upload_bukti"
+        },
+        "response": []
+    }, {
+        "name": "location",
+        "id": "e382e4d5-3d5f-41e8-86ad-e369c37c36fe",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+        },
+        "response": []
+    }, {
+        "name": "get KEY",
+        "id": "a6601d9a-05d9-46a8-b139-d38dda5a5be5",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "urlencoded",
+                "urlencoded": []
+            },
+            "url": "http://android.simetris.net/index.php/services/absen/get_key"
+        },
+        "response": []
+    }, {
+        "name": "show history",
+        "id": "05716bfd-9997-44e5-9953-27e927ae084b",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "urlencoded",
+                "urlencoded": [{
+                    "key": "nip",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                }, {
+                    "key": "nip",
+                    "value": "201804199312302708",
+                    "type": "text"
+                }, {
+                    "key": "handkey",
+                    "value": "6367",
+                    "type": "text"
+                }, {
+                    "key": "device_id",
+                    "value": "357480093993809",
+                    "type": "text"
+                }]
+            },
+            "url": "http://android.simetris.net/index.php/services/absen/history"
+        },
+        "response": []
+    }, {
+        "name": "http://www.opencellid.org/cell/get?key=pk.16f28520a64881b4a09244ab0b00eb98&mcc=510&mnc=1&cellid=33672&lac=34013&format=json",
+        "id": "489a291f-5ded-4f68-b89b-e2dca4c1c2f1",
+        "request": {
+            "method": "GET",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "url": {
+                "raw": "http://www.opencellid.org/cell/get?key=pk.16f28520a64881b4a09244ab0b00eb98&mcc=510&mnc=1&cellid=33672&lac=34013&format=json",
+                "protocol": "http",
+                "host": ["www", "opencellid", "org"],
+                "path": ["cell", "get"],
+                "query": [{
+                    "key": "key",
+                    "value": "pk.16f28520a64881b4a09244ab0b00eb98"
+                }, {
+                    "key": "mcc",
+                    "value": "510"
+                }, {
+                    "key": "mnc",
+                    "value": "1"
+                }, {
+                    "key": "cellid",
+                    "value": "33672"
+                }, {
+                    "key": "lac",
+                    "value": "34013"
+                }, {
+                    "key": "format",
+                    "value": "json"
+                }, {
+                    "key": "Accept",
+                    "value": "a",
+                    "disabled": true
+                }]
+            }
+        },
+        "response": []
+    }, {
+        "name": "kuisioner",
+        "id": "90c013c5-a9e4-419d-86ba-d66e8f4aa938",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "formdata",
+                "formdata": [{
+                    "key": "nip",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                }, {
+                    "key": "nip",
+                    "value": "199712302020121001",
+                    "type": "text"
+                }, {
+                    "key": "handkey",
+                    "value": "5620",
+                    "type": "text"
+                }, {
+                    "key": "device_id",
+                    "value": "27f7b2625fc2e079",
+                    "type": "text"
+                }, {
+                    "key": "code_quiz",
+                    "value": "100",
+                    "type": "text"
+                }]
+            },
+            "url": "http://android.simetris.net/index.php/services/quiz/load_map_quiz"
+        },
+        "response": []
+    }, {
+        "name": "save kuisioner",
+        "id": "ca6e8492-13a8-4247-b3e9-eea189638583",
+        "request": {
+            "method": "POST",
+            "header": [{
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            }],
+            "body": {
+                "mode": "formdata",
+                "formdata": [{
+                    "key": "nip",
+                    "value": "201804198907301715",
+                    "type": "text"
+                }, {
+                    "key": "handkey",
+                    "value": "6389",
+                    "type": "text"
+                }, {
+                    "key": "device_id",
+                    "value": "357480093993809",
+                    "type": "text"
+                }, {
+                    "key": "code_quiz",
+                    "value": "100",
+                    "type": "text"
+                }, {
+                    "key": "versi_aplikasi_eprens",
+                    "value": "2.0-ios",
+                    "type": "text"
+                }, {
+                    "key": "answer_data",
+                    "value": "[{\"code\":\"demam\",\"question\":\"\",\"is_required\":\"\",\"choices\":[],\"answer_code\":\"1\",\"answer_label\":\"Ya\"},{\"code\":\"keluarga\",\"question\":\"\",\"is_required\":\"\",\"choices\":[],\"answer_code\":\"2\",\"answer_label\":\"Tidak\"},{\"code\":\"perjalanan\",\"question\":\"\",\"is_required\":\"\",\"choices\":[],\"answer_code\":\"2\",\"answer_label\":\"Tidak\"}]",
+                    "type": "text"
+                }]
+            },
+            "url": "http://android.simetris.net/index.php/services/quiz/save_quiz"
+        },
+        "response": []
+    }]
+}
